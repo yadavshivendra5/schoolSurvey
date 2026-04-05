@@ -2,7 +2,11 @@ import express from "express";
 import cors from "cors";
 
 import schoolRoutes from "./src/routes/schoolRoutes.js";
+import cors from "cors";
 
+app.use(cors({
+  origin: "*"
+}));
 const app = express();
 
 app.use(cors());
